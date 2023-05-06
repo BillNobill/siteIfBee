@@ -39,6 +39,32 @@ body::-webkit-scrollbar-thumb {
   border-radius: 1px;
   border: 10px solid #bababa;
 }
+/*--------------------------------------------------Hamb. Menu*/
+.container {  
+  cursor: pointer;
+  display: none;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #49da57;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+#menu {
+  display: none;
+}
 /*--------------------------------------------------Footer*/
 .containerfooter {
   display: flex;
@@ -70,6 +96,10 @@ body::-webkit-scrollbar-thumb {
   padding-left: 13vw;
   padding-top: 50px;
 }
+#map{
+  width: 90%;
+  height: 37%;
+}
 /*--------------------------------------------------Tela inicial*/
 #telaInicial {
   width: 100vw;
@@ -86,16 +116,14 @@ body::-webkit-scrollbar-thumb {
   padding-top: 26px;
 }
 #headerBox2 {
-  display: flex;
   padding-top: 84px;
+}
+#headerBox2 > ul{
+  display: flex;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
 }
-#headerBox2 > p{
-  padding: 0;
-  margin: 0;
-}
-#headerBox2 > p > a:hover{
+#headerBox2 > ul > li > a:hover{
   color: #49da57;
 }
 #imgLogo {
@@ -210,7 +238,170 @@ body::-webkit-scrollbar-thumb {
 #imgLuiz:hover, #imgTaina:hover{
   scale: 1.1;
 }
-
+/* --------------------------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width: 1200px){
+  .container {
+    display: inline-block;
+  }
   
+#menuhamb {
+  display: none;
+  text-align: center;
+  width: 100vw;
+  background-color: #49da57;
+  padding-left: 0px;
+  color: #F6FF45;
+  transition: 0.5s;
+  opacity: 1;
+  transition: opacity 2s;
+}
+#menuhamb.escondido {
+  opacity: 0;
+  transition: opacity 2s;
+}
+#menuhamb.aparecer {
+  opacity: 1;
+  transition: opacity 2s;
+}
+#menuhamb > li{
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  padding: 5px;
+}
+#menuhamb > li > a:hover{
+  color: #F6FF45;
+}
+  /*--------------------------------------------------Tela inicial*/
+  #telaInicial {
+    width: 100vw;
+    height: auto;
+    padding: 0 0 0 0;
+  }
+  #header {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #headerBox1 {
+    padding-top: 0;
+  }
+  #headerBox2 {
+    padding-top: 40px;
+    padding-right: 20px;
+  }
+  #headerBox2 > ul{
+    display: none;
+  }
+  #imgLogo {
+    height: 100px;
+    width: auto;
+  }
+  #corpoTelaInicial {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 80%;
+  }
+  #corpoTelaInicialEsquerdo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #corpoTelaInicialEsquerdoBox{
+    width: 441px;
+    height: 400px;
+  }
+  #corpoTelaInicialEsquerdoBox > h1 {
+    text-decoration: none;
+    line-height: normal;
+    font-family: "Montserrat", sans-serif;
+    color: #49da57;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  #corpoTelaInicialEsquerdoBox > p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    margin-top: 40px;
+  }
+  #corpoTelaInicialEsquerdoBox > button {
+    font-size: 24px;
+  }
+  #corpoTelaInicialEsquerdoBox > button:hover{
+    cursor: pointer;
+  }
+  #corpoTelaInicialEsquerdoBox > button > img {
+    height: 35px;
+    width: 35px;
+    vertical-align: -10px;
+  }
+  #corpoTelaInicialDireito {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #imagemAPK {
+    height: 80vw;
+  }
+  /*--------------------------------------------------Tela secundária*/
+  #subtitulo{
+    font-size: 24px;
+    padding: 30px 0 20px 0;
+  }
+  #telaSecundariaDivisaoDeColunas{
+    flex-direction: column;
+  }
+  #telaSecundariaColuna1, #telaSecundariaColuna2 {
+    width: 100%;
+    padding: 0 10px 0 10px;
+  }
+  #telaSecundariaColuna1 > p, #telaSecundariaColuna2 > p{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    padding: 10px 0 10px 0;
+  }
+  #telaSecundariaCriadores{
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+  }
+  #imgLuiz, #imgTaina{
+    height: 200px;
+    transition-duration: 0.5s;
+  }
+  #imgLuiz:hover, #imgTaina:hover{
+    scale: 1.2;
+  }
+  /*--------------------------------------------------Footer*/
+.containerfooter {
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+}
+.footertitle {
+  font-size: 18px;
+}
+.footerwrite {
+  font-size: 16px;
+  width: 100%;
+}
+.box-1 {
+  padding: 10px;
+  padding-top: 0;
+}
+.box-2 {
+  padding: 10px;
+  padding-top: 0;
+}
+.box-3 {
+  padding: 10px;
+  padding-top: 0;
+}
+#map{
+  width: 100%;
+  height: 37%;
+}
 }
