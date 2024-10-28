@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
 /*--------------------------------------------------Configuração Padrão*/
 body {
   margin: 0;
@@ -9,22 +10,28 @@ body {
   overflow-x: hidden;
   background-color: rgb(255, 255, 255);
 }
+
 * {
   outline: none;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 a {
   text-decoration: none;
   color: black;
+  display: inline-block;
 }
+
 ul,
 ol,
 li {
   list-style: none;
 }
+
 /*--------------------------------------------------Scroll bar*/
 body::-webkit-scrollbar {
   width: 3px;
@@ -39,6 +46,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 1px;
   border: 10px solid #bababa;
 }
+
 /*--------------------------------------------------Hamb. Menu*/
 .container {
   cursor: pointer;
@@ -66,49 +74,59 @@ body::-webkit-scrollbar-thumb {
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
 }
+
 #menuhamb {
   display: none;
 }
+
 /*--------------------------------------------------Footer*/
 .containerfooter {
   display: flex;
   background-color: #ffffff;
   height: 500px;
 }
+
 .footertitle {
   font-family: "Raleway", sans-serif;
   color: rgb(0, 0, 0);
   font-size: 20px;
   font-weight: 600;
 }
+
 .footerwrite {
   font-family: "Raleway", sans-serif;
   color: rgb(0, 0, 0);
   font-size: 17px;
   width: 20vw;
 }
+
 .box-1 {
   padding-left: 13vw;
   padding-top: 50px;
 }
+
 .box-2 {
   padding-left: 13vw;
   padding-right: auto;
   padding-top: 50px;
 }
+
 .box-3 {
   padding-left: 13vw;
   padding-top: 50px;
 }
+
 #map {
   width: 90%;
   height: 37%;
 }
+
 /*--------------------------------------------------Tela inicial*/
 #telaInicial {
   width: 100vw;
   height: 100vh;
 }
+
 #header {
   width: 100%;
   height: 20%;
@@ -116,29 +134,35 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   padding: 0 120px 0 120px;
 }
+
 #headerBox1 {
   padding-top: 26px;
 }
+
 #headerBox2 {
   padding-top: 65px;
 }
-#headerBox2 > ul {
+
+#headerBox2>ul {
   display: flex;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
 }
-#headerBox2 > ul > li > a:hover {
+#headerBox2>ul>li>a:hover {
   color: #49da57;
 }
+
 #imgLogo {
   height: 124px;
   width: 120px;
 }
+
 #corpoTelaInicial {
   display: flex;
   height: 80%;
   padding: 0 120px 0 120px;
 }
+
 #corpoTelaInicialEsquerdo {
   width: 50%;
   display: flex;
@@ -146,11 +170,13 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   text-align: center;
 }
+
 #corpoTelaInicialEsquerdoBox {
   width: 441px;
   height: 400px;
 }
-#corpoTelaInicialEsquerdoBox > h1 {
+
+#corpoTelaInicialEsquerdoBox>h1 {
   text-decoration: none;
   line-height: normal;
   font-family: "Montserrat", sans-serif;
@@ -158,12 +184,14 @@ body::-webkit-scrollbar-thumb {
   font-size: 28px;
   font-weight: bold;
 }
-#corpoTelaInicialEsquerdoBox > p {
+
+#corpoTelaInicialEsquerdoBox>p {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   margin-top: 40px;
 }
-#corpoTelaInicialEsquerdoBox > button {
+
+#corpoTelaInicialEsquerdoBox>a button {
   height: 74px;
   width: 272px;
   border-radius: 1000px;
@@ -179,26 +207,32 @@ body::-webkit-scrollbar-thumb {
   color: #f6ff45;
   margin-top: 30px;
 }
-#corpoTelaInicialEsquerdoBox > button:hover {
+
+#corpoTelaInicialEsquerdoBox>a:hover button:hover {
   cursor: pointer;
 }
-#corpoTelaInicialEsquerdoBox > button > img {
+
+#corpoTelaInicialEsquerdoBox>a button>img {
   height: 39px;
   width: 39px;
   vertical-align: -10px;
 }
+
 #corpoTelaInicialDireito {
   width: 50%;
   display: flex;
   align-items: center;
 }
+
 #imagemAPK {
   height: 600px;
 }
+
 /*--------------------------------------------------Tela secundária*/
 #telaSecundaria {
   background-color: #f6ff4535;
 }
+
 #subtitulo {
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
@@ -207,23 +241,27 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   padding: 50px 0 20px 0;
 }
+
 #telaSecundariaDivisaoDeColunas {
   display: flex;
   text-align: justify;
 }
+
 #telaSecundariaColuna1,
 #telaSecundariaColuna2 {
   width: 50%;
   padding: 0 100px 0 100px;
 }
-#telaSecundariaColuna1 > p,
-#telaSecundariaColuna2 > p {
+
+#telaSecundariaColuna1>p,
+#telaSecundariaColuna2>p {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   padding: 0;
   margin: 0;
   padding-bottom: 30px;
 }
+
 #telaSecundariaCriadores {
   display: flex;
   justify-content: space-evenly;
@@ -233,6 +271,7 @@ body::-webkit-scrollbar-thumb {
   color: #49da57;
   font-weight: bold;
 }
+
 #imgLuiz,
 #imgTaina {
   height: 250px;
@@ -243,10 +282,12 @@ body::-webkit-scrollbar-thumb {
   -o-border-radius: 100%;
   transition-duration: 0.5s;
 }
+
 #imgLuiz:hover,
 #imgTaina:hover {
   scale: 1.1;
 }
+
 /* --------------------------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width: 1200px) {
   .container {
@@ -264,28 +305,34 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
     transition: opacity 2s;
   }
+
   #menuhamb.escondido {
     opacity: 0;
     transition: opacity 2s;
   }
+
   #menuhamb.aparecer {
     opacity: 1;
     transition: opacity 2s;
   }
-  #menuhamb > li {
+
+  #menuhamb>li {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     padding: 5px;
   }
-  #menuhamb > li > a:hover {
+
+  #menuhamb>li>a:hover {
     color: #f6ff45;
   }
+
   /*--------------------------------------------------Tela inicial*/
   #telaInicial {
     width: 100vw;
     height: auto;
     padding: 0 0 0 0;
   }
+
   #header {
     width: 100%;
     height: 20%;
@@ -293,26 +340,32 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
     padding: 0 0 0 0;
   }
+
   #headerBox1 {
     padding-top: 0;
   }
+
   #headerBox2 {
     padding-top: 40px;
     padding-right: 20px;
   }
-  #headerBox2 > ul {
+
+  #headerBox2>ul {
     display: none;
   }
+
   #imgLogo {
     height: 100px;
     width: auto;
   }
+
   #corpoTelaInicial {
     display: flex;
     flex-direction: column-reverse;
     height: 80%;
     padding: 0 0 0 0;
   }
+
   #corpoTelaInicialEsquerdo {
     width: 100%;
     display: flex;
@@ -320,11 +373,13 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     text-align: center;
   }
+
   #corpoTelaInicialEsquerdoBox {
     width: 441px;
     height: 400px;
   }
-  #corpoTelaInicialEsquerdoBox > h1 {
+
+  #corpoTelaInicialEsquerdoBox>h1 {
     text-decoration: none;
     line-height: normal;
     font-family: "Montserrat", sans-serif;
@@ -332,89 +387,109 @@ body::-webkit-scrollbar-thumb {
     font-size: 24px;
     font-weight: bold;
   }
-  #corpoTelaInicialEsquerdoBox > p {
+
+  #corpoTelaInicialEsquerdoBox>p {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     margin-top: 40px;
   }
-  #corpoTelaInicialEsquerdoBox > button {
+
+  #corpoTelaInicialEsquerdoBox>button {
     font-size: 24px;
   }
-  #corpoTelaInicialEsquerdoBox > button:hover {
+
+  #corpoTelaInicialEsquerdoBox>button:hover {
     cursor: pointer;
   }
-  #corpoTelaInicialEsquerdoBox > button > img {
+
+  #corpoTelaInicialEsquerdoBox>button>img {
     height: 35px;
     width: 35px;
     vertical-align: -10px;
   }
+
   #corpoTelaInicialDireito {
     width: 100%;
     display: flex;
     justify-content: center;
   }
+
   #imagemAPK {
     height: 80vw;
   }
+
   /*--------------------------------------------------Tela secundária*/
   #subtitulo {
     font-size: 24px;
     padding: 30px 0 20px 0;
   }
+
   #telaSecundariaDivisaoDeColunas {
     flex-direction: column;
   }
+
   #telaSecundariaColuna1,
   #telaSecundariaColuna2 {
     width: 100%;
     padding: 0 10px 0 10px;
   }
-  #telaSecundariaColuna1 > p,
-  #telaSecundariaColuna2 > p {
+
+  #telaSecundariaColuna1>p,
+  #telaSecundariaColuna2>p {
     font-size: 16px;
     padding: 0;
     margin: 0;
     padding: 10px 0 10px 0;
   }
+
   #telaSecundariaCriadores {
     flex-direction: column;
     justify-content: center;
     font-size: 16px;
   }
+
   #imgLuiz,
   #imgTaina {
     height: 200px;
     transition-duration: 0.5s;
   }
+
   #imgLuiz:hover,
   #imgTaina:hover {
     scale: 1.2;
   }
+
   /*--------------------------------------------------Footer*/
   .containerfooter {
     flex-direction: column;
     height: auto;
     width: 100%;
   }
+
   .footertitle {
     font-size: 18px;
   }
+
   .footerwrite {
     font-size: 16px;
     width: 100%;
   }
+
   .box-1 {
     padding: 10px;
     padding-top: 0;
   }
+
   .box-2 {
     padding: 10px;
     padding-top: 0;
   }
+
   .box-3 {
     padding: 10px;
     padding-top: 0;
   }
+
   #map {
     width: 100%;
     height: 37%;
